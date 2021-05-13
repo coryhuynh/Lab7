@@ -3,7 +3,7 @@ import { router } from './router.js'; // Router imported so you can use it to ma
 const setState = router.setState;
 const returnState = router.returnState
 //get rid of index.html
-setState(null, "Journal Entries", "/");
+setState(null, "Journal Entries", "");
 
 const location = window.location;
 
@@ -33,7 +33,7 @@ document.querySelector("[alt='settings']").addEventListener('click', ()=>{
 //On header click change to home page
 const headerTitle = document.getElementsByTagName("h1")[0];
 headerTitle.addEventListener('click', ()=>{
-  const url = "/";
+  const url = "index.html";
   //If already on homepage the click does nothing
   if(location.hash != ""){
     document.body.classList.remove("settings");
