@@ -17,7 +17,6 @@ if ('serviceWorker' in navigator) {
 
 var CACHE_NAME = 'lab7-sw';
 var urlsToCache = [
-    '/',
     'https://cse110lab6.herokuapp.com/entries'
     // './style.css',
     // './scripts/script.js',
