@@ -2,8 +2,8 @@
 import { router } from './router.js'; // Router imported so you can use it to manipulate your SPA app here
 const setState = router.setState;
 const returnState = router.returnState
-//get rid of index.html
-setState(null, "Journal Entries", "");
+// //get rid of index.html
+// setState(null, "Journal Entries", "");
 
 const location = window.location;
 
