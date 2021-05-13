@@ -9,3 +9,5 @@ https://coryhuynh.github.io/Lab7/
 ### Part 1-b
 ![](part-1b.png)
 ### Part 2
+![](part-2b.png)
+
