@@ -17,12 +17,11 @@ if ('serviceWorker' in navigator) {
 
 var CACHE_NAME = 'lab7-sw';
 var urlsToCache = [
-    '/style.css',
-    '/scripts/script.js',
-    '/scripts/router.js',
-    '/components/entry-page.js',
-    '/components/journal-entry.js',
-    ''
+    './style.css',
+    './scripts/script.js',
+    './scripts/router.js',
+    './components/entry-page.js',
+    './components/journal-entry.js'
 ];
 
 self.addEventListener('install', function (event) {
