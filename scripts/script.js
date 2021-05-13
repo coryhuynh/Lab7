@@ -33,7 +33,7 @@ document.querySelector("[alt='settings']").addEventListener('click', ()=>{
 //On header click change to home page
 const headerTitle = document.getElementsByTagName("h1")[0];
 headerTitle.addEventListener('click', ()=>{
-  const url = "index.html";
+  const url = location.origin;
   //If already on homepage the click does nothing
   if(location.hash != ""){
     document.body.classList.remove("settings");
