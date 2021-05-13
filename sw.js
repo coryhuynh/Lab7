@@ -18,11 +18,6 @@ if ('serviceWorker' in navigator) {
 var CACHE_NAME = 'lab7-sw';
 var urlsToCache = [
     'https://cse110lab6.herokuapp.com/entries'
-    // './style.css',
-    // './scripts/script.js',
-    // './scripts/router.js',
-    // './components/entry-page.js',
-    // './components/journal-entry.js'
 ];
 
 self.addEventListener('install', function (event) {
@@ -73,20 +68,6 @@ self.addEventListener('fetch', function (event) {
             })
     );
 });
-/* self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      caches.match(event.request)
-        .then(function(response) {
-          // Cache hit - return response
-          if (response) {
-            return response;
-          }
-          return fetch(event.request);
-        }
-      )
-    );
-  });
- */
 self.addEventListener('activate', event => {
     event.waitUntil(clients.claim());
 });
