@@ -63,6 +63,6 @@ main.addEventListener("click", (event)=>{
 
 //on return or forward
 window.addEventListener('popstate', (event)=>{
-  router.returnState(event);
+  returnState(event);
 });
 
